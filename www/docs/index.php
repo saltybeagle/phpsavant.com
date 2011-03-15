@@ -1,9 +1,9 @@
 <?php
-chdir(dirname(dirname(__FILE__)));
+require_once __DIR__ . '/../../config.sample.php';
 
 //Load the Savant3 class, and create an object.
-require_once 'Savant3.php';
 $savant = new Savant3();
+$savant->addPath('template', dirname(__DIR__));
 
 $source = highlight_file('books.php', true);
 $template = highlight_file('books.tpl.php', true);

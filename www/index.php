@@ -1,5 +1,6 @@
 <?php
-require_once 'Savant3.php';
+require_once __DIR__ . '/../config.sample.php';
+
 $savant = new Savant3();
 $savant->title = 'Savant';
 $savant->maincontent = <<<MC
