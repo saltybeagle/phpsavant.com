@@ -27,7 +27,7 @@ $savant->maincontent = <<<MC
     </ul>
     <h3>Archived Versions</h3>
     <ul>
-        <li><a href="http://phpsavant.com/Savant2-2.4.3.tgz">Savant2-2.4.3</a> (45kb .tgz)</li>
+        <li><a href="http://phpsavant.com/get/Savant2-2.4.3.tgz">Savant2-2.4.3</a> (45kb .tgz)</li>
     </ul>
     
 MC;
