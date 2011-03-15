@@ -20,7 +20,7 @@
         <ul>
             <li><a href="/download/">Download</a></li>
             <li><a href="/docs/">Documentation</a></li>
-            <li><a href="/forum/">Forum</a></li>
+            <li><a href="https://groups.google.com/group/phpsavant">Forum</a></li>
         </ul>
     </div>
     <div class="maincontent">
@@ -29,7 +29,7 @@
         ?>
     </div>
     <div class="footer">
-        Copyright &copy; 2003-<?php echo date('Y'); ?>, Paul M. Jones, Brett Bieber.
+        Copyright &copy; <?php echo date('Y'); ?> Brett Bieber.
     </div>
 </div>
 <script type="text/javascript">
