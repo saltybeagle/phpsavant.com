@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Savant2_Filter_colorizeCode</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class Savant2_Filter_colorizeCode</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-vars">Vars</a>
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Colorizes all text between <pre><ol><code><pre><li>...</li>
+</pre></code></ol></pre> tags.</p>
+	<ul class="tags">
+				<li><span class="field">license:</span> LGPL</li>
+				<li><span class="field">author:</span> <p>Paul M. Jones &lt;<a href="mailto:pmjones@ciaweb.net">pmjones@ciaweb.net</a>&gt;</p><p>$Id: Savant2_Filter_colorizeCode.php,v 1.2 2005/08/09 22:19:39 pmjones Exp $</p></li>
+				<li><span class="field">author:</span> Paul M. Jones &lt;<a href="mailto:pmjones@ciaweb.net">pmjones@ciaweb.net</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_Savant2_Savant2_Filter_colorizeCode_php.html">/Savant2/Savant2_Filter_colorizeCode.php</a> (line <span class="field">34</span>)
+		</p>
+		
+				
+		<pre><a href="../Savant2/Savant2_Filter.html">Savant2_Filter</a>
+   |
+   --Savant2_Filter_colorizeCode</pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-vars">Vars</a>
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#filter" title="details" class="method-name">filter</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">&$text</span>)
+									</div>
+							</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+										<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../Savant2/Savant2_Filter.html">Savant2_Filter</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../Savant2/Savant2_Filter.html#var$Savant">Savant2_Filter::$Savant</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-vars">Vars</a>
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodfilter" id="filter"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">filter</span> (line <span class="line-number">59</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Colorizes all text between <pre><ol><code><pre><li> <span class="src-id">blocks</span><span class="src-sym">, </span><span class="src-id">so you can demonstrate HTML tags</span></li>
+<li> <span class="src-id">without them being honored in the browser</span>.  <span class="src-id">Also converts tabs to four</span></li>
+<li> <span class="src-id">spaces</span>.</li>
+<li>&nbsp;</li>
+<li> <span class="src-id">To mark the beginning of php code in a </span>&lt;<span class="src-id">code</span>&gt; <span class="src-id">block</span><span class="src-sym">, </span>use <span class="src-id">the custom</span></li>
+<li> <span class="src-id">tag </span>&lt;<span class="src-id">php</span>&gt;<span class="src-sym">, </span><span class="src-key">and </span>use &lt;/<span class="src-id">php</span>&gt; <span class="src-id">to mark the </span><a href="http://www.php.net/end">end</a>. <span class="src-id">You can</span>'t use the normal</li>
+<li> php code tags because Savant2 will try to execute that code when the</li>
+<li> template runs.</li>
+<li>&nbsp;</li>
+<li>...</li>
+</pre></code></ol></pre> tags.</p>
+<p class="description"><p>Colorizes all text between <pre><ol><code><pre><li>...</li>
+</pre></code></ol></pre> tags with PHP's  highlight_string function.  Additionally, this will convert HTML  entities within</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			filter
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">&$text</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">&$text</span><span class="var-description">: The source text to be filtered.</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../Savant2/Savant2_Filter.html#methodfilter">Savant2_Filter::filter()</a></dt>
+						<dd>Stub method for extended behaviors.</dd>
+					</dl>
+		
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../Savant2/Savant2_Filter.html">Savant2_Filter</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../Savant2/Savant2_Filter.html#methodSavant2_Filter">Savant2_Filter::Savant2_Filter()</a></span><br>
+													<span class="method-name"><a href="../Savant2/Savant2_Filter.html#methodfilter">Savant2_Filter::filter()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 11 Sep 2005 17:45:35 -0500 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.3.0RC3</a>
+	</p>
+	</div></body>
+</html>

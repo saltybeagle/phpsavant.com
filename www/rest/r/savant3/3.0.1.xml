@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+ <p xlink:href="rest/p/savant3">Savant3</p>
+ <c>phpsavant.com</c>
+ <v>3.0.1</v>
+ <st>stable</st>
+ <l>LGPL License</l>
+ <m>saltybeagle</m>
+ <s>A PHP5 template system that uses PHP for its logic; provides path searching, plugins, filters, and an optional compiler system.</s>
+ <d>Savant3 is an object-oriented system to help keep manipulation
+logic ('model' or 'controller' scripts) separate from display
+logic ('view' scripts) using PHP-based templates.  Savant3 is
+E_STRICT compliant for PHP5, provides a plugin model for
+convenience methods, supports output filter callbacks, allows
+for custom compilers, and provides path searching for themed
+(skinned) applications.</d>
+ <da>2009-04-03 13:10:06</da>
+ <n>
+* Modify __toString method signature for compatibility with PHP 5.3.
+No parameters should be sent. If you need to send a template parameter, use fetch($tpl) or setTemplate($tpl) then echo $savant.
+
+Thanks, Dan Bettles.
+
+* Add public method getOutput($tpl = null) which will return the output including error_text if an error occurs.
+ </n>
+ <f>21574</f>
+ <g>http://phpsavant.com/get/Savant3-3.0.1</g>
+ <x xlink:href="package.3.0.1.xml"/>
+</r>

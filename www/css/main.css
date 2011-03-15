@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	font-family:"Trajan Pro","Times New Roman", Times, serif;
+	width:980px;
+}
+a img, img {border:none;}
+a, a:link, a:visited {color:#000000; text-decoration:none;}
+a:hover {border-bottom:1px dashed #EEE;}
+.container {margin:5em;}
+.logo {margin-bottom:4em;}
+.navigation {
+	margin:0;
+	float:left;}
+.navigation ul {
+	list-style:none;
+	width:200px;
+	margin:0;
+	padding:0;
+	}
+.navigation ul li {
+	border-bottom:1px solid #EEE;
+	margin:1em 0;
+	padding:0.2em;}
+.navigation ul ul {
+    width:0;
+    }
+.navigation ul li ul li {
+    padding:0em;
+    margin:0em;
+    font-size:80%;}
+.sIFR-active .navigation li {
+  visibility: hidden;
+  font-family: Verdana;
+  line-height: 1em;
+  font-size: 18px;
+  color:#000000;
+}
+.maincontent {
+	width:550px;
+	float:right;
+	margin:1em 0;
+	font-size:90%;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	border-left:1px solid #EEE;
+	padding:0 1em;
+}
+.maincontent p:first-letter {
+	font-family:"Trajan Pro","Times New Roman", Times, serif;
+	font-size:120%;
+}
+.maincontent a, .maincontent a:link, .maincontent a:visited {
+	border-bottom:1px dashed #BACBE8;
+	color:#BACBE8;}
+.maincontent .file {
+	line-height:80%;}
+
+.maincontent h1 {font-size:1.5em;}
+.maincontent h2 {font-size:1.3em;}
+
+.maincontent ul.tabs {
+    display:inline;
+    margin:0;
+    padding:0 1em 2px 1em;
+    float:right;
+    border-bottom:1px solid #CCC;
+}
+
+.maincontent ul.tabs li {
+	padding:0.2em 0.8em;
+	border:1px solid #EEE;
+	border-bottom:none;
+	display:inline;
+	background-color:#E3E7EE;
+	}
+.maincontent ul.tabs a {color:#000;border:none;}
+	
+.maincontent ul.tabs li:hover {
+    border-color:#AAA;
+    background-color:#BACBE8;
+    }
+
+.footer {
+clear:both;
+font-size:70%;
+}
+.sIFR-root {
+color:#000000;
+}
+.sIFR-active a:link {
+  color:#000000;
+}
+

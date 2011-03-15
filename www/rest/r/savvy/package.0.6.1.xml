@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://pear.php.net/dtd/package-2.1" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.1     http://pear.php.net/dtd/package-2.1.xsd" packagerversion="2.0.0">
+ <name>Savvy</name>
+ <channel>phpsavant.com</channel>
+ <summary>Savvy is a powerful but lightweight object-oriented template system for PHP.
+</summary>
+ <description>
+Unlike other template systems, Savvy by default does not compile your
+templates into PHP; instead, it uses PHP itself as its template language so you
+don't need to learn a new markup system.</description>
+ <lead>
+  <name>Brett Bieber</name>
+  <user>saltybeagle</user>
+  <email>saltybeagle@php.net</email>
+  <active>yes</active>
+ </lead>
+ <lead>
+  <name>Gregory Beaver</name>
+  <user>cellog</user>
+  <email>cellog@php.net</email>
+  <active>yes</active>
+ </lead>
+ <date>2010-04-22</date>
+ <time>11:45:40</time>
+ <version>
+  <release>0.6.1</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
+ <notes>Fix:
+* Also filter the return values of methods.
+
+
+Package Savvy API release notes for version 0.1.0.</notes>
+ <contents>
+  <dir name="/">
+   <file role="test" name="tests/test_framework.php.inc"/>
+   <file role="test" name="tests/render/string.phpt"/>
+   <file role="test" name="tests/render/object.phpt"/>
+   <file role="test" name="tests/render/Foo.tpl.php"/>
+   <file role="test" name="tests/render/fastcompile.phpt"/>
+   <file role="test" name="tests/render/echostring.tpl.php"/>
+   <file role="test" name="tests/render/array.phpt"/>
+   <file role="test" name="tests/escape/string.phpt"/>
+   <file role="test" name="tests/escape/raw.tpl.php"/>
+   <file role="test" name="tests/escape/object.phpt"/>
+   <file role="test" name="tests/escape/Foo.tpl.php"/>
+   <file role="test" name="tests/escape/echostring.tpl.php"/>
+   <file role="php" name="src/Savvy/UnexpectedValueException.php"/>
+   <file role="php" name="src/Savvy/TemplateException.php"/>
+   <file role="php" name="src/Savvy/ObjectProxy/Traversable.php"/>
+   <file role="php" name="src/Savvy/ObjectProxy/ArrayAccess.php"/>
+   <file role="php" name="src/Savvy/ObjectProxy.php"/>
+   <file role="php" name="src/Savvy/MapperInterface.php"/>
+   <file role="php" name="src/Savvy/FilterAbstract.php"/>
+   <file role="php" name="src/Savvy/FastCompilerInterface.php"/>
+   <file role="php" name="src/Savvy/Exception.php"/>
+   <file role="php" name="src/Savvy/CompilerInterface.php"/>
+   <file role="php" name="src/Savvy/CompilerException.php"/>
+   <file role="php" name="src/Savvy/ClassToTemplateMapper.php"/>
+   <file role="php" name="src/Savvy/BasicFastCompiler.php"/>
+   <file role="php" name="src/Savvy/BadMethodCallException.php"/>
+   <file role="php" name="src/Savvy/Autoload.php"/>
+   <file role="php" name="src/Savvy.php"/>
+   <file role="doc" name="examples/templates/StringView.tpl.php"/>
+   <file role="doc" name="examples/templates/stdClass.tpl.php"/>
+   <file role="doc" name="examples/templates/MyTemplate.tpl.php"/>
+   <file role="doc" name="examples/basic.php"/>
+   <file role="doc" name="examples/baseball/PartialSeason.tpl.php"/>
+   <file role="doc" name="examples/baseball/ListItem.tpl.php"/>
+   <file role="doc" name="examples/baseball/index.php"/>
+   <file role="doc" name="examples/baseball/BaseballTeam.tpl.php"/>
+   <file role="doc" name="examples/baseball/BaseballPlayer.tpl.php"/>
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <phprelease/>
+</package>

@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Savant2_Compiler_basic</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class Savant2_Compiler_basic</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Abstract Savant2_Compiler class.</p>
+<p class="description"><p>You have to extend this class for it to be useful; e.g., &quot;class  Savant2_Plugin_example extends Savant2_Plugin&quot;.</p><p>$Id: Compiler.php,v 1.5 2005/08/09 22:19:39 pmjones Exp $</p></p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Paul M. Jones &lt;<a href="mailto:pmjones@ciaweb.net">pmjones@ciaweb.net</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_Savant2_Savant2_Compiler_basic_php.html">/Savant2/Savant2_Compiler_basic.php</a> (line <span class="field">72</span>)
+		</p>
+		
+				
+		<pre><a href="../Savant2/Savant2_Compiler.html">Savant2_Compiler</a>
+   |
+   --Savant2_Compiler_basic</pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+								<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$allowedFunctions" title="details" class="var-name">$allowedFunctions</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$allowedStatic" title="details" class="var-name">$allowedStatic</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$compileDir" title="details" class="var-name">$compileDir</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$convert" title="details" class="var-name">$convert</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">bool</span>
+					<a href="#$forceCompile" title="details" class="var-name">$forceCompile</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$prefix" title="details" class="var-name">$prefix</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">bool</span>
+					<a href="#$strict" title="details" class="var-name">$strict</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$suffix" title="details" class="var-name">$suffix</a>
+				</div>
+							</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+								
+				<div class="method-definition">
+											<span class="method-result">Savant2_Compiler_basic</span>
+										<a href="#Savant2_Compiler_basic" title="details" class="method-name">Savant2_Compiler_basic</a>
+											([<span class="var-type">mixed</span>&nbsp;<span class="var-name">$conf</span> = <span class="var-default">array()</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#allowedFunctions" title="details" class="method-name">allowedFunctions</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#allowedStatic" title="details" class="method-name">allowedStatic</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#analyze" title="details" class="method-name">analyze</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">&$php</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#changed" title="details" class="method-name">changed</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$tpl</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#compile" title="details" class="method-name">compile</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$tpl</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#getPath" title="details" class="method-name">getPath</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$tpl</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#saveCompiled" title="details" class="method-name">saveCompiled</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$tpl</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$php</span>)
+									</div>
+							</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$allowedFunctions" id="$allowedFunctions"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$allowedFunctions</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">160</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The list of allowed functions when in restricted mode.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$allowedStatic" id="$allowedStatic"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$allowedStatic</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">173</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The list of allowed static methods when in restricted mode.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$compileDir" id="$compileDir"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$compileDir</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number">186</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The directory where compiled templates are saved.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$convert" id="$convert"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$convert</span>
+			 = <span class="var-default">array(<br />	<br />		// branching<br />		'(if\s*(.+):)'        =&gt; '$1',<br />		'(elseif\s*(.+):)'    =&gt; '$1',<br />		'(else\s*(.+):)'      =&gt; '$1',<br />		'(endif)'             =&gt; '$1',<br />		'(switch\s*(.+):)'    =&gt; '$1',<br />		'(case\s*(.+):)'      =&gt; '$1',<br />		'(default:)'          =&gt; '$1',<br />		'(endswitch)'         =&gt; '$1',<br />		'(break)'             =&gt; '$1',<br />		<br />		// looping<br />		'(foreach\s*(.+):)'   =&gt; '$1',<br />		'(endforeach)'        =&gt; '$1',<br />		'(for\s*(.+):)'       =&gt; '$1',<br />		'(endfor)'            =&gt; '$1',<br />		'(while\s*(.+):)'     =&gt; '$1',<br />		'(endwhile)'          =&gt; '$1',<br />		'(continue)'          =&gt; '$1',<br />		<br />		// simple variable printing<br />		'(\$(.+))'            =&gt; 'print $1',<br />		<br />		// extended printing<br />		'(\:(.+))'            =&gt; 'print ($2)',<br />		<br />		// comments<br />		'\*(.*)?\*'           =&gt; '/**$1*/',<br />		<br />		// template includes<br />		'tpl (.*)'            =&gt; 'include $this-&gt;findTemplate($1)',<br />		<br />		// plugins<br />		'\[\s*(.+)?\s*\]'     =&gt; '$this-&gt;plugin($1)',<br />	)</span>			(line <span class="line-number">111</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The conversion regular expressions.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$forceCompile" id="$forceCompile"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">bool</span>
+			<span class="var-name">$forceCompile</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number">199</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Whether or not to force every template to be compiled every time.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$prefix" id="$prefix"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$prefix</span>
+			 = <span class="var-default"> '{'</span>			(line <span class="line-number">85</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The template directive prefix.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$strict" id="$strict"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">bool</span>
+			<span class="var-name">$strict</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number">216</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Whether or not to strict-check the compiled template.</p>
+<p class="description"><p>Strict-checks are off by default until all problems with  PhpCodeAnalyzer have been resolved.</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$suffix" id="$suffix"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$suffix</span>
+			 = <span class="var-default"> '}'</span>			(line <span class="line-number">98</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The template directive suffix.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../Savant2/Savant2_Compiler.html">Savant2_Compiler</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../Savant2/Savant2_Compiler.html#var$Savant">Savant2_Compiler::$Savant</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodSavant2_Compiler_basic" id="Savant2_Compiler_basic"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor Savant2_Compiler_basic</span> (line <span class="line-number">225</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructor.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">Savant2_Compiler_basic</span>
+		<span class="method-name">
+			Savant2_Compiler_basic
+		</span>
+					([<span class="var-type">mixed</span>&nbsp;<span class="var-name">$conf</span> = <span class="var-default">array()</span>])
+			</div>
+	
+		
+		
+	</div>
+<a name="methodallowedFunctions" id="allowedFunctions"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">allowedFunctions</span> (line <span class="line-number">628</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">A list of allowed functions for templates.</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			allowedFunctions
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodallowedStatic" id="allowedStatic"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">allowedStatic</span> (line <span class="line-number">616</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">A list of allowed static method calls for templates.</p>
+<p class="description"><p>The format is ...</p><p>array(      'Class1' =&gt; array('method1', 'method2'),      'Class2' =&gt; array('methodA', 'methodB'),      'Class3' =&gt; '*'  );</p><p>If you want to allow all methods from the static class to be allowed,  use a '*' in the method name list.</p></p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			allowedStatic
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodanalyze" id="analyze"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">analyze</span> (line <span class="line-number">405</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Analyze a compiled template for restriction violations.</p>
+	<ul class="tags">
+				<li><span class="field">var:</span> The compiled PHP code from a template source.</li>
+				<li><span class="field">return:</span> An array of restriction violations; if empty, then  there were no violations discovered by analysis.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			analyze
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">&$php</span>)
+			</div>
+	
+		
+		
+	</div>
+<a name="methodchanged" id="changed"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">changed</span> (line <span class="line-number">244</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Has the source template changed since it was last compiled?</p>
+	<ul class="tags">
+				<li><span class="field">var:</span> The source template file.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			changed
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$tpl</span>)
+			</div>
+	
+		
+		
+	</div>
+<a name="methodcompile" id="compile"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">compile</span> (line <span class="line-number">314</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Compiles a template source into PHP code for Savant.</p>
+	<ul class="tags">
+				<li><span class="field">var:</span> The source template file.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			compile
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$tpl</span>)
+			</div>
+	
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../Savant2/Savant2_Compiler.html#methodcompile">Savant2_Compiler::compile()</a></dt>
+						<dd>Stub method for extended behaviors.</dd>
+					</dl>
+		
+	</div>
+<a name="methodgetPath" id="getPath"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getPath</span> (line <span class="line-number">294</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets the path to the compiled PHP for a template source.</p>
+	<ul class="tags">
+				<li><span class="field">var:</span> The source template file.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			getPath
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$tpl</span>)
+			</div>
+	
+		
+		
+	</div>
+<a name="methodsaveCompiled" id="saveCompiled"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">saveCompiled</span> (line <span class="line-number">271</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Saves the PHP compiled from template source.</p>
+	<ul class="tags">
+				<li><span class="field">var:</span> The source template file.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			saveCompiled
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$tpl</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$php</span>)
+			</div>
+	
+		
+		
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../Savant2/Savant2_Compiler.html">Savant2_Compiler</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../Savant2/Savant2_Compiler.html#methodSavant2_Compiler">Savant2_Compiler::Savant2_Compiler()</a></span><br>
+													<span class="method-name"><a href="../Savant2/Savant2_Compiler.html#methodcompile">Savant2_Compiler::compile()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 11 Sep 2005 17:45:33 -0500 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.3.0RC3</a>
+	</p>
+	</div></body>
+</html>

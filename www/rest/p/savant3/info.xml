@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p>
+ <n>Savant3</n>
+ <c>phpsavant.com</c>
+ <ca xlink:href="rest/c/Default" xmlns:xlink="rest/c/Default">Default</ca>
+ <l>LGPL License</l>
+ <s>A PHP5 template system that uses PHP for its logic; provides path searching, plugins, filters, and an optional compiler system.</s>
+ <d>Savant3 is an object-oriented system to help keep manipulation
+logic ('model' or 'controller' scripts) separate from display
+logic ('view' scripts) using PHP-based templates.  Savant3 is
+E_STRICT compliant for PHP5, provides a plugin model for
+convenience methods, supports output filter callbacks, allows
+for custom compilers, and provides path searching for themed
+(skinned) applications.</d>
+ <r xmlns="http://pear.php.net/dtd/rest.package" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.package http://pear.php.net/dtd/rest.package.xsd"/>
+</p>

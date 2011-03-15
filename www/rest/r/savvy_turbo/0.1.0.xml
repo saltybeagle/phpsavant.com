@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<r xmlns="http://pear.php.net/dtd/rest.release" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://pear.php.net/dtd/rest.release http://pear.php.net/dtd/rest.release.xsd">
+ <p xlink:href="rest/p/savvy_turbo">Savvy_Turbo</p>
+ <c>phpsavant.com</c>
+ <v>0.1.0</v>
+ <st>alpha</st>
+ <l>New BSD License</l>
+ <m>saltybeagle</m>
+ <s>Savvy_Turbo adds output caching to Savvy rendered content
+</s>
+ <d>
+Savvy content can be cached for faster rendering. Savvy_Turbo allows rendered
+content to be cached, and recalled for subsequent requests. For basic use,
+instead of creating a new Savvy object, create a Savvy_Turbo object. In models
+you'd like to have cached, implement the CacheableInterface.</d>
+ <da>2010-11-19 14:06:11</da>
+ <n>Package Savvy_Turbo release notes for version 0.1.0.
+
+Package Savvy_Turbo API release notes for version 0.1.0.</n>
+ <f>6819</f>
+ <g>http://phpsavant.com/get/Savvy_Turbo-0.1.0</g>
+ <x xlink:href="package.0.1.0.xml"/>
+</r>

@@ -1,0 +1,1045 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Savant3_Plugin_form2</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class Savant3_Plugin_form2</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Plugin to create XHTML forms with CSS and table-based layouts.</p>
+	<ul class="tags">
+				<li><span class="field">author:</span> Paul M. Jones &lt;<a href="mailto:pmjones@ciaweb.net">pmjones@ciaweb.net</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_Savant3_resources_Savant3_Plugin_form2_php.html">/Savant3/resources/Savant3_Plugin_form2.php</a> (line <span class="field">27</span>)
+		</p>
+		
+				
+		<pre><a href="../Savant3/Savant3_Plugin.html">Savant3_Plugin</a>
+   |
+   --Savant3_Plugin_form2</pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+								<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$class" title="details" class="var-name">$class</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$clear" title="details" class="var-name">$clear</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$feedbackCol" title="details" class="var-name">$feedbackCol</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$feedbackRow" title="details" class="var-name">$feedbackRow</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$float" title="details" class="var-name">$float</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$radioCol" title="details" class="var-name">$radioCol</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$radioRow" title="details" class="var-name">$radioRow</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$requireSign" title="details" class="var-name">$requireSign</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">int</span>
+					<a href="#$tabBase" title="details" class="var-name">$tabBase</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$_base" title="details" class="var-name">$_base</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">string</span>
+					<a href="#$_blockLabel" title="details" class="var-name">$_blockLabel</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">bool</span>
+					<a href="#$_blockType" title="details" class="var-name">$_blockType</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">bool</span>
+					<a href="#$_inBlock" title="details" class="var-name">$_inBlock</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">bool</span>
+					<a href="#$_inGroup" title="details" class="var-name">$_inGroup</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">bool</span>
+					<a href="#$_tabs" title="details" class="var-name">$_tabs</a>
+				</div>
+							</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#auto" title="details" class="method-name">auto</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$list</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$arrayName</span> = <span class="var-default">null</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#begin" title="details" class="method-name">begin</a>
+											([<span class="var-type">array</span>&nbsp;<span class="var-name">$attribs</span> = <span class="var-default">null</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#block" title="details" class="method-name">block</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$action</span> = <span class="var-default">'begin'</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$label</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">'col'</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$float</span> = <span class="var-default">null</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$clear</span> = <span class="var-default">null</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#element" title="details" class="method-name">element</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$info</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$arrayName</span> = <span class="var-default">null</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#end" title="details" class="method-name">end</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#form2" title="details" class="method-name">form2</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$method</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#group" title="details" class="method-name">group</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$label</span> = <span class="var-default">null</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$require</span> = <span class="var-default">false</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#set" title="details" class="method-name">set</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$val</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#_blockBegin" title="details" class="method-name">_blockBegin</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$label</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">'col'</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$float</span> = <span class="var-default">null</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$clear</span> = <span class="var-default">null</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#_blockEnd" title="details" class="method-name">_blockEnd</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#_blockSplit" title="details" class="method-name">_blockSplit</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#_layout" title="details" class="method-name">_layout</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$label</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$element</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$require</span> = <span class="var-default">false</span>], [<span class="var-type">array|string</span>&nbsp;<span class="var-name">$feedback</span> = <span class="var-default">null</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#_tag" title="details" class="method-name">_tag</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span>, [<span class="var-type">array</span>&nbsp;<span class="var-name">$attribs</span> = <span class="var-default">null</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#_tidy" title="details" class="method-name">_tidy</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$xhtml</span>)
+									</div>
+							</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$class" id="$class"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$class</span>
+			 = <span class="var-default"> ''</span>			(line <span class="line-number">51</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The CSS class to use when generating form layout.</p>
+<p class="description"><p>This class name will be applied to the following tags:</p><p><ul><li>div</li><li>fieldset</li><li>legend</li><li>table</li><li>tr</li><li>th</li><li>td</li><li>label</li></ul></p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$clear" id="$clear"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$clear</span>
+			 = <span class="var-default"> ''</span>			(line <span class="line-number">77</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The default 'clear' style for fieldset blocks.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$feedbackCol" id="$feedbackCol"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$feedbackCol</span>
+			 = <span class="var-default"> '&lt;br /&gt;&lt;span style=&quot;color: red; font-size: 80%%;&quot;&gt;%s&lt;/span&gt;'</span>			(line <span class="line-number">129</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The sprintf() format for feedback in col-type blocks.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$feedbackRow" id="$feedbackRow"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$feedbackRow</span>
+			 = <span class="var-default"> '&lt;br /&gt;&lt;span style=&quot;color: red; font-size: 80%%;&quot;&gt;%s&lt;/span&gt;'</span>			(line <span class="line-number">142</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The sprintf() format for feedback in col-type blocks.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$float" id="$float"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$float</span>
+			 = <span class="var-default"> ''</span>			(line <span class="line-number">64</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The default 'float' style for fieldset blocks.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$radioCol" id="$radioCol"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$radioCol</span>
+			 = <span class="var-default"> '&lt;br /&gt;'</span>			(line <span class="line-number">90</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The text used to separate radio buttons in col-type blocks.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$radioRow" id="$radioRow"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$radioRow</span>
+			 = <span class="var-default"> '&amp;nbsp;&amp;nbsp;'</span>			(line <span class="line-number">103</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The text used to separate radio buttons in row-type blocks.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$requireSign" id="$requireSign"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$requireSign</span>
+			 = <span class="var-default"> '&lt;span style=&quot;color: red;&quot;&gt;*&amp;nbsp;&lt;/span&gt;'</span>			(line <span class="line-number">155</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The sign that goes with a label indicating it is a required field.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$tabBase" id="$tabBase"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">int</span>
+			<span class="var-name">$tabBase</span>
+			 = <span class="var-default"> 2</span>			(line <span class="line-number">116</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The base number of tabs to use when tidying up the generated XHTML.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_base" id="$_base"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$_base</span>
+			 = <span class="var-default">array(<br />		'name'    =&gt; null,<br />		'type'    =&gt; null,<br />		'label'   =&gt; null,<br />		'descr'   =&gt; null,<br />		'value'   =&gt; null,<br />		'require' =&gt; false,<br />		'disable' =&gt; false,<br />		'options' =&gt; array(),'listsep'=&gt;null,'attribs'=&gt;array(),'feedback'=&gt;array(),)</span>			(line <span class="line-number">168</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Default values for each element hint.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_blockLabel" id="$_blockLabel"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">string</span>
+			<span class="var-name">$_blockLabel</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number">206</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The legend for the fieldset block, if any.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_blockType" id="$_blockType"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">bool</span>
+			<span class="var-name">$_blockType</span>
+			 = <span class="var-default"> null</span>			(line <span class="line-number">193</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The kind of fieldset block being generated ('col' or 'row').</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_inBlock" id="$_inBlock"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">bool</span>
+			<span class="var-name">$_inBlock</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number">219</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Whether or not the form is generating elements within a fieldset block.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_inGroup" id="$_inGroup"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">bool</span>
+			<span class="var-name">$_inGroup</span>
+			 = <span class="var-default"> false</span>			(line <span class="line-number">232</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Whether or not the form is generating elements as a group.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+<a name="var$_tabs" id="$_tabs"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">bool</span>
+			<span class="var-name">$_tabs</span>
+			 = <span class="var-default">array(<br />		'form'                  =&gt; 0,<br />		'/form'                 =&gt; 0,<br />		'div'                   =&gt; 1,<br />		'/div'                  =&gt; 1,<br />		'fieldset'              =&gt; 1,<br />		'/fieldset'             =&gt; 1,<br />		'legend'                =&gt; 2,<br />		'table'                 =&gt; 2,<br />		'/table'                =&gt; 2,<br />		'tr'                    =&gt; 3,<br />		'/tr'                   =&gt; 3,<br />		'th'                    =&gt; 4,<br />		'/th'                   =&gt; 4,<br />		'td'                    =&gt; 4,<br />		'/td'                   =&gt; 4,<br />		'label'                 =&gt; 5,<br />		'input'                 =&gt; 5,<br />		'textarea'              =&gt; 5,<br />		'select'                =&gt; 5,<br />		'/select'               =&gt; 5,<br />		'option'                =&gt; 6<br />	)</span>			(line <span class="line-number">245</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">The number of tabs to use before certain tags when tidying XHTML layout.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../Savant3/Savant3_Plugin.html">Savant3_Plugin</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../Savant3/Savant3_Plugin.html#var$Savant">Savant3_Plugin::$Savant</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodauto" id="auto"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">auto</span> (line <span class="line-number">455</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Builds multiple form elements from a list of hints.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			auto
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$list</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$arrayName</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$list</span><span class="var-description">: An array of element hints.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$arrayName</span><span class="var-description">: For each element, create its name as a key  in this array name.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodbegin" id="begin"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">begin</span> (line <span class="line-number">338</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Begins the form.</p>
+<p class="description"><p>The form defaults to 'action=&quot;$_SERVER['REQUEST_URI']&quot;',  'method=&quot;post&quot;', and 'enctype=&quot;multipart/form-data&quot;, but you can  override those, and add any other attributes you like.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> A &lt;form&gt; tag.</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			begin
+		</span>
+					([<span class="var-type">array</span>&nbsp;<span class="var-name">$attribs</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$attribs</span><span class="var-description">: Attributes to add to the form tag.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodblock" id="block"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">block</span> (line <span class="line-number">495</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Builds XHTML to start, end, or split layout blocks.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The appropriate XHTML for the block action.</li>
+				<li><span class="field">access:</span> protected</li>
+				<li><span class="field">todo:</span> Output an error when calling a non-action.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			block
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$action</span> = <span class="var-default">'begin'</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$label</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">'col'</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$float</span> = <span class="var-default">null</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$clear</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$action</span><span class="var-description">: Whether to 'begin', 'split', or 'end' a block.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$label</span><span class="var-description">: The fieldset legend.  If an empty string,  builds a fieldset with no legend; if null, builds a div (not a  fieldset).</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$type</span><span class="var-description">: The layout type to use, 'col' or 'row'.  The  'col' layout uses a left-column for element labels and a  right-column for the elements; the 'row' layout shows the elements  left-to-right, with the element label over the element, all in a  single row.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$float</span><span class="var-description">: Whether the block should be cleared of 'left'  or 'right' floating blocks (set to an empty string if you don't  want to clear).  Defaults to the value of $this-&gt;clear.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodelement" id="element"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">element</span> (line <span class="line-number">398</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Builds one form element from a hint information array.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			element
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$info</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$arrayName</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$info</span><span class="var-description">: Hint information array.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$arrayName</span><span class="var-description">: Format the element name as a key in this  array name.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodend" id="end"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">end</span> (line <span class="line-number">374</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Ends the form and closes any existing layout.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The ending layout XHTML and a &lt;/form&gt; tag.</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			end
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodform2" id="form2"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">form2</span> (line <span class="line-number">284</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Central switcher API for the the various public methods.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> XHTML generated by the public method.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			form2
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$method</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$method</span><span class="var-description">: The public method to call from this class; all  additional parameters will be passed to the called method, and all  returns from the mehtod will be tidied.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodgroup" id="group"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">group</span> (line <span class="line-number">539</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Builds the layout for a group of elements; auto-starts a block if needed.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The element-group layout XHTML.</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			group
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span>, [<span class="var-type">string</span>&nbsp;<span class="var-name">$label</span> = <span class="var-default">null</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$require</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$type</span><span class="var-description">: Whether to 'begin' or 'end' the group.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$label</span><span class="var-description">: The label for the group.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodset" id="set"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">set</span> (line <span class="line-number">314</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the value of a public property.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			set
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">$val</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$key</span><span class="var-description">: The name of the property to set.</span>			</li>
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$val</span><span class="var-description">: The new value for the property.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="method_blockBegin" id="_blockBegin"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_blockBegin</span> (line <span class="line-number">785</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Generates XHTML to start a fieldset block.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The XHTML to start a block.</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			_blockBegin
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$label</span> = <span class="var-default">null</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">'col'</span>], [<span class="var-type">string</span>&nbsp;<span class="var-name">$float</span> = <span class="var-default">null</span>], [<span class="var-type">mixed</span>&nbsp;<span class="var-name">$clear</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$label</span><span class="var-description">: The fieldset legend.  If an empty string,  builds a fieldset with no legend; if null, builds a div (not a  fieldset).</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$type</span><span class="var-description">: The layout type to use, 'col' or 'row'.  The  'col' layout uses a left-column for element labels and a  right-column for the elements; the 'row' layout shows the elements  left-to-right, with the element label over the element, all in a  single row.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$float</span><span class="var-description">: Whether the block should be cleared of 'left'  or 'right' floating blocks (set to an empty string if you don't  want to clear).  Defaults to the value of $this-&gt;clear.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="method_blockEnd" id="_blockEnd"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_blockEnd</span> (line <span class="line-number">861</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Generates the XHTML to end a block.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The XHTML to end a block.</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			_blockEnd
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="method_blockSplit" id="_blockSplit"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_blockSplit</span> (line <span class="line-number">914</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Generates the layout to split the layout within a block.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The XHTML to split the layout with in a block.</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			_blockSplit
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="method_layout" id="_layout"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_layout</span> (line <span class="line-number">675</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds layout to an element; auto-starts a block as needed.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The element layout XHTML.</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			_layout
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$label</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$element</span>, [<span class="var-type">bool</span>&nbsp;<span class="var-name">$require</span> = <span class="var-default">false</span>], [<span class="var-type">array|string</span>&nbsp;<span class="var-name">$feedback</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$label</span><span class="var-description">: The label for the element.</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$element</span><span class="var-description">: The XHTML for the element field.</span>			</li>
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$require</span><span class="var-description">: Whether or not the element should have a  &quot;required&quot; sign in the label.</span>			</li>
+					<li>
+				<span class="var-type">array|string</span>
+				<span class="var-name">$feedback</span><span class="var-description">: One or more feedback strings.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="method_tag" id="_tag"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">_tag</span> (line <span class="line-number">638</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Builds an XHTML opening tag with class and attributes.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The opening tag XHTML.</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			_tag
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span>, [<span class="var-type">array</span>&nbsp;<span class="var-name">$attribs</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$type</span><span class="var-description">: The tag type ('td', 'th', 'div', etc).</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$attribs</span><span class="var-description">: Additional attributes for the tag.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="method_tidy" id="_tidy"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_tidy</span> (line <span class="line-number">746</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Puts in newlines and tabs to make the source code readable.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The tidied XHTML.</li>
+				<li><span class="field">access:</span> protected</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			_tidy
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$xhtml</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$xhtml</span><span class="var-description">: The XHTML to tidy up.</span>			</li>
+				</ul>
+		
+		
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../Savant3/Savant3_Plugin.html">Savant3_Plugin</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../Savant3/Savant3_Plugin.html#method__construct">Savant3_Plugin::__construct()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Tue, 09 Aug 2005 16:54:55 -0500 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.3.0RC3</a>
+	</p>
+	</div></body>
+</html>

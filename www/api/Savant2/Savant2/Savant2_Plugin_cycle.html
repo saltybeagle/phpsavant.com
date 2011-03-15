@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Savant2_Plugin_cycle</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class Savant2_Plugin_cycle</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Cycles through a series of values.</p>
+<p class="description"><p>$Id: Savant2_Plugin_cycle.php,v 1.2 2005/08/09 22:19:39 pmjones Exp $</p></p>
+	<ul class="tags">
+				<li><span class="field">license:</span> LGPL</li>
+				<li><span class="field">author:</span> Paul M. Jones &lt;<a href="mailto:pmjones@ciaweb.net">pmjones@ciaweb.net</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_Savant2_Savant2_Plugin_cycle_php.html">/Savant2/Savant2_Plugin_cycle.php</a> (line <span class="field">32</span>)
+		</p>
+		
+				
+		<pre><a href="../Savant2/Savant2_Plugin.html">Savant2_Plugin</a>
+   |
+   --Savant2_Plugin_cycle</pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+								<div class="var-title">
+					<span class="var-type">array</span>
+					<a href="#$values" title="details" class="var-name">$values</a>
+				</div>
+							</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+								
+				<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#plugin" title="details" class="method-name">plugin</a>
+											(<span class="var-type">string|array</span>&nbsp;<span class="var-name">$cycle</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$iteration</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$repeat</span> = <span class="var-default">1</span>])
+									</div>
+							</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$values" id="$values"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">array</span>
+			<span class="var-name">$values</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">59</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">An associative array of predefined cycle value sets.</p>
+<p class="description"><p>You can preset cycle values via Savant::loadPlugin().</p><p>$conf = array(      'values' =&gt; array(          'lightdark' =&gt; array('light', 'dark'),          'threesome' =&gt; array('one', 'two', 'three')      )  );</p><p>$Savant-&gt;loadPlugin('cycle', $conf);</p><p>... and in your template you can call:</p><p>$this-&gt;plugin('cycle', 'lightdark', $iteration);</p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	
+		
+		
+
+</div>
+							<h4>Inherited Variables</h4>
+				<A NAME='inherited_vars'><!-- --></A>
+									<p>Inherited from <span class="classname"><a href="../Savant2/Savant2_Plugin.html">Savant2_Plugin</a></span></p>
+					<blockquote>
+													<span class="var-title">
+								<span class="var-name"><a href="../Savant2/Savant2_Plugin.html#var$Savant">Savant2_Plugin::$Savant</a></span><br>
+							</span>
+											</blockquote> 
+										
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodplugin" id="plugin"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">plugin</span> (line <span class="line-number">79</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Cycles through a series of values.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The value of the cycle iteration.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			plugin
+		</span>
+					(<span class="var-type">string|array</span>&nbsp;<span class="var-name">$cycle</span>, <span class="var-type">int</span>&nbsp;<span class="var-name">$iteration</span>, [<span class="var-type">int</span>&nbsp;<span class="var-name">$repeat</span> = <span class="var-default">1</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string|array</span>
+				<span class="var-name">$cycle</span><span class="var-description">: If a string, the preset cycle value key to use  from $this-&gt;cycles; if an array, use the array as the cycle values.</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$iteration</span><span class="var-description">: The iteration number for the cycle.</span>			</li>
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$repeat</span><span class="var-description">: The number of times to repeat each cycle value.</span>			</li>
+				</ul>
+		
+			<hr class="separator" />
+		<div class="notes">Redefinition of:</div>
+		<dl>
+			<dt><a href="../Savant2/Savant2_Plugin.html#methodplugin">Savant2_Plugin::plugin()</a></dt>
+						<dd>Stub method for extended behaviors.</dd>
+					</dl>
+		
+	</div>
+							<h4>Inherited Methods</h4>
+				<a name='inherited_methods'><!-- --></a>	
+									<!-- =========== Summary =========== -->
+					<p>Inherited From <span class="classname"><a href="../Savant2/Savant2_Plugin.html">Savant2_Plugin</a></span></p>
+					<blockquote>
+													<span class="method-name"><a href="../Savant2/Savant2_Plugin.html#methodSavant2_Plugin">Savant2_Plugin::Savant2_Plugin()</a></span><br>
+													<span class="method-name"><a href="../Savant2/Savant2_Plugin.html#methodplugin">Savant2_Plugin::plugin()</a></span><br>
+											</blockquote>
+										
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 11 Sep 2005 17:45:36 -0500 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.3.0RC3</a>
+	</p>
+	</div></body>
+</html>

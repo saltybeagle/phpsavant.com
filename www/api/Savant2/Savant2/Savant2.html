@@ -1,0 +1,1427 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class Savant2</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class Savant2</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+															<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Provides an object-oriented template system.</p>
+<p class="description"><p>Savant2 helps you separate model logic from view logic using PHP as  the template language. By default, Savant2 does not compile templates.  However, you may pass an optional compiler object to compile template  source to include-able PHP code.</p><p>Please see the documentation at <a href="http://phpsavant.com/">http://phpsavant.com/</a>, and be  sure to donate! :-)</p><p>$Id: Savant2.php,v 1.29 2005/09/11 22:42:24 pmjones Exp $</p></p>
+	<ul class="tags">
+				<li><span class="field">license:</span> LGPL</li>
+				<li><span class="field">version:</span> 2.4.0 stable</li>
+				<li><span class="field">author:</span> Paul M. Jones &lt;<a href="mailto:pmjones@ciaweb.net">pmjones@ciaweb.net</a>&gt;</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_Savant2_php.html">/Savant2.php</a> (line <span class="field">73</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+												<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+								
+				<div class="method-definition">
+											<span class="method-result">Savant2</span>
+										<a href="#Savant2" title="details" class="method-name">Savant2</a>
+											([<span class="var-type">array</span>&nbsp;<span class="var-name">$conf</span> = <span class="var-default">array()</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addEscape" title="details" class="method-name">addEscape</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#addPath" title="details" class="method-name">addPath</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$type</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$dir</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#applyFilters" title="details" class="method-name">applyFilters</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$text</span> = <span class="var-default">null</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#assign" title="details" class="method-name">assign</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#assignRef" title="details" class="method-name">assignRef</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">&$val</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#clear" title="details" class="method-name">clear</a>
+											([<span class="var-type">mixed</span>&nbsp;<span class="var-name">$var</span> = <span class="var-default">null</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#display" title="details" class="method-name">display</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$tpl</span> = <span class="var-default">null</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#eprint" title="details" class="method-name">eprint</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$value</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">object An</span>
+										<a href="#error" title="details" class="method-name">&amp;error</a>
+											(<span class="var-type">int</span>&nbsp;<span class="var-name">$code</span>, [<span class="var-type">array</span>&nbsp;<span class="var-name">$info</span> = <span class="var-default">array()</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#escape" title="details" class="method-name">escape</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$value</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#fetch" title="details" class="method-name">fetch</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$_tpl</span> = <span class="var-default">null</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string|bool</span>
+										<a href="#findFile" title="details" class="method-name">findFile</a>
+											(<span class="var-type">array</span>&nbsp;<span class="var-name">$type</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$file</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#findTemplate" title="details" class="method-name">findTemplate</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$tpl</span> = <span class="var-default">null</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getEscape" title="details" class="method-name">getEscape</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">array</span>
+										<a href="#getPath" title="details" class="method-name">getPath</a>
+											([<span class="var-type">mixed</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">null</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#getVars" title="details" class="method-name">getVars</a>
+											([<span class="var-type">mixed</span>&nbsp;<span class="var-name">$key</span> = <span class="var-default">null</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">boolean</span>
+										<a href="#isError" title="details" class="method-name">isError</a>
+											(<span class="var-type">object</span>&nbsp;<span class="var-name">&$obj</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#loadFilter" title="details" class="method-name">loadFilter</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type">array</span>&nbsp;<span class="var-name">$conf</span> = <span class="var-default">array()</span>], [<span class="var-type">bool</span>&nbsp;<span class="var-name">$savantRef</span> = <span class="var-default">null</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#loadPlugin" title="details" class="method-name">loadPlugin</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type">array</span>&nbsp;<span class="var-name">$conf</span> = <span class="var-default">array()</span>], [<span class="var-type">bool</span>&nbsp;<span class="var-name">$savantRef</span> = <span class="var-default">null</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">string</span>
+										<a href="#loadTemplate" title="details" class="method-name">loadTemplate</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$tpl</span> = <span class="var-default">null</span>], [<span class="var-type">bool</span>&nbsp;<span class="var-name">$setScript</span> = <span class="var-default">false</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#plugin" title="details" class="method-name">plugin</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setCall" title="details" class="method-name">setCall</a>
+											([<span class="var-type">string</span>&nbsp;<span class="var-name">$method</span> = <span class="var-default">'plugin'</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setCompiler" title="details" class="method-name">setCompiler</a>
+											(<span class="var-type">object</span>&nbsp;<span class="var-name">&$compiler</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setError" title="details" class="method-name">setError</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$error</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setEscape" title="details" class="method-name">setEscape</a>
+										()
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setExtract" title="details" class="method-name">setExtract</a>
+											([<span class="var-type">bool</span>&nbsp;<span class="var-name">$flag</span> = <span class="var-default">true</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setPath" title="details" class="method-name">setPath</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span>, <span class="var-type">string|array</span>&nbsp;<span class="var-name">$new</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setReference" title="details" class="method-name">setReference</a>
+											([<span class="var-type">bool</span>&nbsp;<span class="var-name">$flag</span> = <span class="var-default">false</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setRestrict" title="details" class="method-name">setRestrict</a>
+											([<span class="var-type">bool</span>&nbsp;<span class="var-name">$flag</span> = <span class="var-default">false</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#setTemplate" title="details" class="method-name">setTemplate</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$template</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">mixed</span>
+										<a href="#splugin" title="details" class="method-name">splugin</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#unloadFilter" title="details" class="method-name">unloadFilter</a>
+											([<span class="var-type">string|array</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#unloadPlugin" title="details" class="method-name">unloadPlugin</a>
+											([<span class="var-type">string|array</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#_" title="details" class="method-name">_</a>
+											(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$value</span>)
+									</div>
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#__call" title="details" class="method-name">__call</a>
+											(<span class="var-type">string</span>&nbsp;<span class="var-name">$func</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$args</span>)
+									</div>
+							</div>
+		</div>
+	</div>		
+
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodSavant2" id="Savant2"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">Constructor Savant2</span> (line <span class="line-number">296</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Constructor.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">Savant2</span>
+		<span class="method-name">
+			Savant2
+		</span>
+					([<span class="var-type">array</span>&nbsp;<span class="var-name">$conf</span> = <span class="var-default">array()</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$conf</span><span class="var-description">: <p>An associative array of configuration keys for  the Savant2 object.  Any, or none, of the keys may be set. The  keys are:</p><p>'template_path' =&gt; The default path string or array of directories  to search for templates.</p><p>'resource_path' =&gt; The default path string or array of directories  to search for plugin and filter resources.</p><p>'error' =&gt; The custom error class that Savant2 should use  when returning errors.</p><p>'extract' =&gt; Whether or not to extract variables into the local  scope when executing a template.</p><p>'template' =&gt; The default template source name to use.</p></span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodaddEscape" id="addEscape"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">addEscape</span> (line <span class="line-number">565</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds to the callbacks used when calling $this-&gt;escape().</p>
+<p class="description"><p>Each parameter passed to this function is treated as a separate  callback.  For example:</p><p><pre><ol><code><pre><li> <span class="src-var">$savant</span><span class="src-sym">-&gt;</span><a href="../Savant2/Savant2.html#methodaddEscape">addEscape</a><span class="src-sym">(</span></li>
+<li>     <span class="src-str">'stripslashes'</span><span class="src-sym">,</span></li>
+<li>     <span class="src-str">'htmlspecialchars'</span><span class="src-sym">,</span></li>
+<li>     <span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'StaticClass'</span><span class="src-sym">, </span><span class="src-str">'method'</span><span class="src-sym">)</span><span class="src-sym">,</span></li>
+<li>     <span class="src-key">array</span><span class="src-sym">(</span><span class="src-var">$object</span><span class="src-sym">, </span><span class="src-var">$method</span><span class="src-sym">)</span></li>
+<li> <span class="src-sym">)</span><span class="src-sym">;</span></li>
+</pre></code></ol></pre></p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addEscape
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodaddPath" id="addPath"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">addPath</span> (line <span class="line-number">777</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Adds a search directory for templates.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			addPath
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$type</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$dir</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$dir</span><span class="var-description">: The directory or stream to search.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodapplyFilters" id="applyFilters"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">applyFilters</span> (line <span class="line-number">1614</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Apply all loaded filters, in order, to text.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The text after being passed through all loded  filters.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			applyFilters
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$text</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$text</span><span class="var-description">: The text to which filters should be applied.  If null, sets the text to $this-&gt;_output.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodassign" id="assign"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">assign</span> (line <span class="line-number">934</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets variables for the template.</p>
+<p class="description"><p>This method is overloaded; you can assign all the properties of  an object, an associative array, or a single value by name.</p><p>You are not allowed to set variables that begin with an underscore;  these are either private properties for Savant2 or private variables  within the template script itself.</p><p><pre><ol><code><pre><li> <span class="src-var">$Savant2 </span>=<span class="src-sym">&amp; </span><span class="src-key">new </span><a href="../Savant2/Savant2.html#methodSavant2">Savant2</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li>&nbsp;</li>
+<li> <span class="src-comm">// assign directly</span></li>
+<li> <span class="src-var">$Savant2</span><span class="src-sym">-&gt;</span><span class="src-id">var1 </span>= <span class="src-str">'something'</span><span class="src-sym">;</span></li>
+<li> <span class="src-var">$Savant2</span><span class="src-sym">-&gt;</span><span class="src-id">var2 </span>= <span class="src-str">'else'</span><span class="src-sym">;</span></li>
+<li>&nbsp;</li>
+<li> <span class="src-comm">// assign by name and value</span></li>
+<li> <span class="src-var">$Savant2</span><span class="src-sym">-&gt;</span><a href="../Savant2/Savant2.html#methodassign">assign</a><span class="src-sym">(</span><span class="src-str">'var1'</span><span class="src-sym">, </span><span class="src-str">'something'</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li> <span class="src-var">$Savant2</span><span class="src-sym">-&gt;</span><a href="../Savant2/Savant2.html#methodassign">assign</a><span class="src-sym">(</span><span class="src-str">'var2'</span><span class="src-sym">, </span><span class="src-str">'else'</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li>&nbsp;</li>
+<li> <span class="src-comm">// assign by assoc-array</span></li>
+<li> <span class="src-var">$ary </span>= <span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'var1' </span>=&gt; <span class="src-str">'something'</span><span class="src-sym">, </span><span class="src-str">'var2' </span>=&gt; <span class="src-str">'else'</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li> <span class="src-var">$Savant2</span><span class="src-sym">-&gt;</span><a href="../Savant2/Savant2.html#methodassign">assign</a><span class="src-sym">(</span><span class="src-var">$obj</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li>&nbsp;</li>
+<li> <span class="src-comm">// assign by object</span></li>
+<li> <span class="src-var">$obj </span>= <span class="src-key">new </span><span class="src-id">stdClass</span><span class="src-sym">;</span></li>
+<li> <span class="src-var">$obj</span><span class="src-sym">-&gt;</span><span class="src-id">var1 </span>= <span class="src-str">'something'</span><span class="src-sym">;</span></li>
+<li> <span class="src-var">$obj</span><span class="src-sym">-&gt;</span><span class="src-id">var2 </span>= <span class="src-str">'else'</span><span class="src-sym">;</span></li>
+<li> <span class="src-var">$Savant2</span><span class="src-sym">-&gt;</span><a href="../Savant2/Savant2.html#methodassign">assign</a><span class="src-sym">(</span><span class="src-var">$obj</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+</pre></code></ol></pre></p><p>Greg Beaver came up with the idea of assigning to public class  properties.</p></p>
+	<ul class="tags">
+				<li><span class="field">throws:</span> object An error object with a SAVANT2_ERROR_ASSIGN code.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			assign
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodassignRef" id="assignRef"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">assignRef</span> (line <span class="line-number">1004</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets references for the template.</p>
+<p class="description"><p>// assign by name and value  $Savant2-&gt;assignRef('ref', $reference);</p><p>// assign directly  $Savant2-&gt;ref =&amp; $reference;</p><p>Greg Beaver came up with the idea of assigning to public class  properties.</p></p>
+	<ul class="tags">
+				<li><span class="field">throws:</span> object An error object with a SAVANT2_ERROR_ASSIGNREF code.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			assignRef
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$key</span>, <span class="var-type">mixed</span>&nbsp;<span class="var-name">&$val</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$key</span><span class="var-description">: The name for the reference in the template.</span>			</li>
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">&$val</span><span class="var-description">: The referenced variable.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodclear" id="clear"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">clear</span> (line <span class="line-number">1031</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Unsets assigned variables and references.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			clear
+		</span>
+					([<span class="var-type">mixed</span>&nbsp;<span class="var-name">$var</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$var</span><span class="var-description">: If null, clears all variables; if a string, clears  the one variable named by the string; if a sequential array, clears  the variables names in that array.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methoddisplay" id="display"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">display</span> (line <span class="line-number">1288</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Execute and display a template script.</p>
+	<ul class="tags">
+				<li><span class="field">see:</span> <a href="../Savant2/Savant2.html#methodfetch">Savant2::fetch()</a></li>
+				<li><span class="field">throws:</span> object An error object with a SAVANT2_ERROR_NOSCRIPT code.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			display
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$tpl</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$tpl</span><span class="var-description">: The name of the template file to parse;  automatically searches through the template paths.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodeprint" id="eprint"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">eprint</span> (line <span class="line-number">676</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Prints a value after escaping it for output.</p>
+<p class="description"><p>You can override the predefined escaping callbacks by passing  added parameters as replacement callbacks.</p><p><pre><ol><code><pre><li> <span class="src-comm">// use predefined callbacks</span></li>
+<li> <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../Savant2/Savant2.html#method_">_</a><span class="src-sym">(</span><span class="src-var">$value</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li>&nbsp;</li>
+<li> <span class="src-comm">// use replacement callbacks</span></li>
+<li> <span class="src-var">$this</span><span class="src-sym">-&gt;</span><a href="../Savant2/Savant2.html#method_">_</a><span class="src-sym">(</span></li>
+<li>     <span class="src-var">$value</span><span class="src-sym">,</span></li>
+<li>     <span class="src-str">'stripslashes'</span><span class="src-sym">,</span></li>
+<li>     <span class="src-str">'htmlspecialchars'</span><span class="src-sym">,</span></li>
+<li>     <span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'StaticClass'</span><span class="src-sym">, </span><span class="src-str">'method'</span><span class="src-sym">)</span><span class="src-sym">,</span></li>
+<li>     <span class="src-key">array</span><span class="src-sym">(</span><span class="src-var">$object</span><span class="src-sym">, </span><span class="src-var">$method</span><span class="src-sym">)</span></li>
+<li> <span class="src-sym">)</span><span class="src-sym">;</span></li>
+</pre></code></ol></pre></p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			eprint
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$value</span><span class="var-description">: The value to be escaped and printed.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methoderror" id="error"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">error</span> (line <span class="line-number">1656</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Returns an error object.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> error object of the type specified by  $this-&gt;_error.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">object An</span>
+		<span class="method-name">
+			&amp;error
+		</span>
+					(<span class="var-type">int</span>&nbsp;<span class="var-name">$code</span>, [<span class="var-type">array</span>&nbsp;<span class="var-name">$info</span> = <span class="var-default">array()</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">int</span>
+				<span class="var-name">$code</span><span class="var-description">: A SAVANT2_ERROR_* constant.</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$info</span><span class="var-description">: An array of error-specific information.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodescape" id="escape"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">escape</span> (line <span class="line-number">617</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Applies escaping to a value.</p>
+<p class="description"><p>You can override the predefined escaping callbacks by passing  added parameters as replacement callbacks.</p><p><pre><ol><code><pre><li> <span class="src-comm">// use predefined callbacks</span></li>
+<li> <span class="src-var">$result </span>= <span class="src-var">$savant</span><span class="src-sym">-&gt;</span><a href="../Savant2/Savant2.html#methodescape">escape</a><span class="src-sym">(</span><span class="src-var">$value</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li>&nbsp;</li>
+<li> <span class="src-comm">// use replacement callbacks</span></li>
+<li> <span class="src-var">$result </span>= <span class="src-var">$savant</span><span class="src-sym">-&gt;</span><a href="../Savant2/Savant2.html#methodescape">escape</a><span class="src-sym">(</span></li>
+<li>     <span class="src-var">$value</span><span class="src-sym">,</span></li>
+<li>     <span class="src-str">'stripslashes'</span><span class="src-sym">,</span></li>
+<li>     <span class="src-str">'htmlspecialchars'</span><span class="src-sym">,</span></li>
+<li>     <span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'StaticClass'</span><span class="src-sym">, </span><span class="src-str">'method'</span><span class="src-sym">)</span><span class="src-sym">,</span></li>
+<li>     <span class="src-key">array</span><span class="src-sym">(</span><span class="src-var">$object</span><span class="src-sym">, </span><span class="src-var">$method</span><span class="src-sym">)</span></li>
+<li> <span class="src-sym">)</span><span class="src-sym">;</span></li>
+</pre></code></ol></pre></p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			escape
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$value</span><span class="var-description">: The value to be escaped.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodfetch" id="fetch"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">fetch</span> (line <span class="line-number">1216</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Executes a template script and returns the results as a string.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The output of the the template script.</li>
+				<li><span class="field">throws:</span> object An error object with a SAVANT2_ERROR_NOSCRIPT code.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			fetch
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$_tpl</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$_tpl</span><span class="var-description">: The name of the template source file ...  automatically searches the template paths and compiles as needed.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodfindFile" id="findFile"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">findFile</span> (line <span class="line-number">830</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Searches a series of paths for a given file.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The full path and file name for the target file,  or boolean false if the file is not found in any of the paths.</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string|bool</span>
+		<span class="method-name">
+			findFile
+		</span>
+					(<span class="var-type">array</span>&nbsp;<span class="var-name">$type</span>, <span class="var-type">string</span>&nbsp;<span class="var-name">$file</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$type</span><span class="var-description">: The type of paths to search (template, plugin,  or filter).</span>			</li>
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$file</span><span class="var-description">: The file name to look for.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodfindTemplate" id="findTemplate"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">findTemplate</span> (line <span class="line-number">1197</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">This is a an alias to loadTemplate() that cannot set the script.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The full path to the compiled template script.</li>
+				<li><span class="field">throws:</span> object An error object with a SAVANT2_ERROR_NOTEMPLATE code.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			findTemplate
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$tpl</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$tpl</span><span class="var-description">: The template source name to look for.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodgetEscape" id="getEscape"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getEscape</span> (line <span class="line-number">582</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets the array of output-escaping callbacks.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The array of output-escaping callbacks.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getEscape
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodgetPath" id="getPath"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">getPath</span> (line <span class="line-number">806</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets the array of search directories for template sources.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The array of search directories for template sources.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">array</span>
+		<span class="method-name">
+			getPath
+		</span>
+					([<span class="var-type">mixed</span>&nbsp;<span class="var-name">$type</span> = <span class="var-default">null</span>])
+			</div>
+	
+		
+		
+	</div>
+<a name="methodgetVars" id="getVars"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">getVars</span> (line <span class="line-number">1070</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Gets the current value of one, many, or all assigned variables.</p>
+<p class="description"><p>Never returns variables starting with an underscore; these are  reserved for internal Savant2 use.</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> If multiple variables were reqested, returns an  associative array where the key is the variable name and the  value is the variable value; if one variable was requested,  returns the variable value only.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			getVars
+		</span>
+					([<span class="var-type">mixed</span>&nbsp;<span class="var-name">$key</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$key</span><span class="var-description">: If null, returns a copy of all variables and  their values; if an array, returns an only those variables named  in the array; if a string, returns only that variable.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodisError" id="isError"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">isError</span> (line <span class="line-number">1717</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Tests if an object is of the Savant2_Error class.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> True if $obj is an error object of the type  Savant2_Error, or is a subclass that Savant2_Error. False if not.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">boolean</span>
+		<span class="method-name">
+			isError
+		</span>
+					(<span class="var-type">object</span>&nbsp;<span class="var-name">&$obj</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">object</span>
+				<span class="var-name">&$obj</span><span class="var-description">: The object to be tested.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodloadFilter" id="loadFilter"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">loadFilter</span> (line <span class="line-number">1529</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Loads a filter class and instantiates it within Savant2.</p>
+	<ul class="tags">
+				<li><span class="field">throws:</span> object An error object with a SAVANT2_ERROR_NOFILTER code.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			loadFilter
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type">array</span>&nbsp;<span class="var-name">$conf</span> = <span class="var-default">array()</span>], [<span class="var-type">bool</span>&nbsp;<span class="var-name">$savantRef</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: The filter name (not including Savant2_Filter_  prefix).</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$conf</span><span class="var-description">: An associative array of filter configuration  options.</span>			</li>
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$savantRef</span><span class="var-description">: Default false.  When true, sets the $Savant  property of the filter to a reference to this Savant object.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodloadPlugin" id="loadPlugin"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">loadPlugin</span> (line <span class="line-number">1327</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Loads a plugin class and instantiates it within Savant2.</p>
+	<ul class="tags">
+				<li><span class="field">throws:</span> object An error object with a SAVANT2_ERROR_NOPLUGIN code.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			loadPlugin
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>, [<span class="var-type">array</span>&nbsp;<span class="var-name">$conf</span> = <span class="var-default">array()</span>], [<span class="var-type">bool</span>&nbsp;<span class="var-name">$savantRef</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: The plugin name (not including Savant2_Plugin_  prefix).</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$conf</span><span class="var-description">: An associative array of plugin configuration  options.</span>			</li>
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$savantRef</span><span class="var-description">: Default false.  When true, sets the $Savant  property of the filter to a reference to this Savant object.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodloadTemplate" id="loadTemplate"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">loadTemplate</span> (line <span class="line-number">1127</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Loads a template script for execution (does not execute the script).</p>
+<p class="description"><p>This will optionally compile the template source into a PHP script  if a compiler object has been passed into Savant2.</p><p>Also good for including templates from the template paths within  another template, like so:</p><p>include $this-&gt;loadTemplate('template.tpl.php');</p></p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The full path to the compiled template script.</li>
+				<li><span class="field">throws:</span> object An error object with a SAVANT2_ERROR_NOTEMPLATE code.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">string</span>
+		<span class="method-name">
+			loadTemplate
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$tpl</span> = <span class="var-default">null</span>], [<span class="var-type">bool</span>&nbsp;<span class="var-name">$setScript</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$tpl</span><span class="var-description">: The template source name to look for.</span>			</li>
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$setScript</span><span class="var-description">: Default false; if true, sets the $this-&gt;_script  property to the resulting script path (or null on error).  Normally,  only $this-&gt;fetch() will need to set this to true.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodplugin" id="plugin"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">plugin</span> (line <span class="line-number">1450</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Executes a plugin with arbitrary parameters and displays the  result.</p>
+	<ul class="tags">
+				<li><span class="field">throws:</span> object An error object with a SAVANT2_ERROR_NOPLUGIN code.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			plugin
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: The plugin name (not including Savant2_Plugin_  prefix).</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodsetCall" id="setCall"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setCall</span> (line <span class="line-number">399</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the method that __call() will alias to.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setCall
+		</span>
+					([<span class="var-type">string</span>&nbsp;<span class="var-name">$method</span> = <span class="var-default">'plugin'</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$method</span><span class="var-description">: The Savant2 method for __call() to alias to,  generally 'plugin' or 'splugin'.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodsetCompiler" id="setCompiler"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setCompiler</span> (line <span class="line-number">370</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets a custom compiler/pre-processor for template sources.</p>
+<p class="description"><p>By default, Savant2 does not use a compiler; use this to set your  own custom compiler (pre-processor) for template sources.</p></p>
+	<ul class="tags">
+				<li><span class="field">throws:</span> object An error object with a SAVANT2_ERROR_COMPILER code.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setCompiler
+		</span>
+					(<span class="var-type">object</span>&nbsp;<span class="var-name">&$compiler</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">object</span>
+				<span class="var-name">$compiler</span><span class="var-description">: The compiler object; it must have a  &quot;compile()&quot; method.  If null or false, the current compiler object  is removed from Savant2.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodsetError" id="setError"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setError</span> (line <span class="line-number">418</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the custom error class for Savant2 errors.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setError
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$error</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$error</span><span class="var-description">: The name of the custom error class name; if  null or false, resets the error class to 'Savant2_Error'.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodsetEscape" id="setEscape"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setEscape</span> (line <span class="line-number">537</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Clears then sets the callbacks to use when calling $this-&gt;escape().</p>
+<p class="description"><p>Each parameter passed to this function is treated as a separate  callback.  For example:</p><p><pre><ol><code><pre><li> <span class="src-var">$savant</span><span class="src-sym">-&gt;</span><a href="../Savant2/Savant2.html#methodsetEscape">setEscape</a><span class="src-sym">(</span></li>
+<li>     <span class="src-str">'stripslashes'</span><span class="src-sym">,</span></li>
+<li>     <span class="src-str">'htmlspecialchars'</span><span class="src-sym">,</span></li>
+<li>     <span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'StaticClass'</span><span class="src-sym">, </span><span class="src-str">'method'</span><span class="src-sym">)</span><span class="src-sym">,</span></li>
+<li>     <span class="src-key">array</span><span class="src-sym">(</span><span class="src-var">$object</span><span class="src-sym">, </span><span class="src-var">$method</span><span class="src-sym">)</span></li>
+<li> <span class="src-sym">)</span><span class="src-sym">;</span></li>
+</pre></code></ol></pre></p></p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setEscape
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+<a name="methodsetExtract" id="setExtract"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setExtract</span> (line <span class="line-number">462</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Turns extraction of variables on/off.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setExtract
+		</span>
+					([<span class="var-type">bool</span>&nbsp;<span class="var-name">$flag</span> = <span class="var-default">true</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$flag</span><span class="var-description">: True to turn on extraction, false to turn off.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodsetPath" id="setPath"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setPath</span> (line <span class="line-number">732</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets an entire array of search paths.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setPath
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$type</span>, <span class="var-type">string|array</span>&nbsp;<span class="var-name">$new</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$type</span><span class="var-description">: The type of path to set, typcially 'template'  or 'resource'.</span>			</li>
+					<li>
+				<span class="var-type">string|array</span>
+				<span class="var-name">$new</span><span class="var-description">: The new set of search paths.  If null or  false, resets to the current directory only.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodsetReference" id="setReference"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setReference</span> (line <span class="line-number">484</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the automated Savant reference for plugins and filters.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setReference
+		</span>
+					([<span class="var-type">bool</span>&nbsp;<span class="var-name">$flag</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$flag</span><span class="var-description">: Whether to reference Savant2 or not.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodsetRestrict" id="setRestrict"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">setRestrict</span> (line <span class="line-number">440</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Turns path checking on/off.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setRestrict
+		</span>
+					([<span class="var-type">bool</span>&nbsp;<span class="var-name">$flag</span> = <span class="var-default">false</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">bool</span>
+				<span class="var-name">$flag</span><span class="var-description">: True to turn on path checks, false to turn off.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodsetTemplate" id="setTemplate"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">setTemplate</span> (line <span class="line-number">502</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Sets the default template name.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			setTemplate
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$template</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$template</span><span class="var-description">: The default template name.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodsplugin" id="splugin"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">splugin</span> (line <span class="line-number">1416</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Executes a plugin with arbitrary parameters and returns the  result.</p>
+	<ul class="tags">
+				<li><span class="field">return:</span> The plugin results.</li>
+				<li><span class="field">see:</span> <a href="../Savant2/Savant2.html#methodloadPlugin">Savant2::loadPlugin()</a></li>
+				<li><span class="field">throws:</span> object An error object with a SAVANT2_ERROR_NOPLUGIN code.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">mixed</span>
+		<span class="method-name">
+			splugin
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$name</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$name</span><span class="var-description">: The plugin name (not including Savant2_Plugin_  prefix).</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodunloadFilter" id="unloadFilter"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">unloadFilter</span> (line <span class="line-number">1585</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Unloads one or more filters from Savant2.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			unloadFilter
+		</span>
+					([<span class="var-type">string|array</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string|array</span>
+				<span class="var-name">$name</span><span class="var-description">: The filter name (not including Savant2_Filter_  prefix).  If null, unloads all filters; if a string, unloads that one  filter; if an array, unloads all filters named as values in the array.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="methodunloadPlugin" id="unloadPlugin"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">unloadPlugin</span> (line <span class="line-number">1383</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Unloads one or more plugins from Savant2.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			unloadPlugin
+		</span>
+					([<span class="var-type">string|array</span>&nbsp;<span class="var-name">$name</span> = <span class="var-default">null</span>])
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string|array</span>
+				<span class="var-name">$name</span><span class="var-description">: The plugin name (not including Savant2_Plugin_  prefix).  If null, unloads all plugins; if a string, unloads that one  plugin; if an array, unloads all plugins named as values in the array.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="method_" id="_"><!-- --></a>
+<div class="evenrow">
+	
+	<div class="method-header">
+		<span class="method-title">_</span> (line <span class="line-number">698</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Alias to eprint() and identical in every way.</p>
+	<ul class="tags">
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			_
+		</span>
+					(<span class="var-type">mixed</span>&nbsp;<span class="var-name">$value</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">mixed</span>
+				<span class="var-name">$value</span><span class="var-description">: The value to be escaped and printed.</span>			</li>
+				</ul>
+		
+		
+	</div>
+<a name="method__call" id="__call"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">__call</span> (line <span class="line-number">1488</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">PHP5 ONLY: Magic method alias to plugin().</p>
+<p class="description"><p>E.g., instead of $this-&gt;plugin('form', ...) you would use  $this-&gt;form(...).  You can set this to use any other Savant2 method  by issuing, for example, setCall('splugin') to use splugin() ... which  is really the only other sensible choice.</p></p>
+	<ul class="tags">
+				<li><span class="field">throws:</span> object An error object with a SAVANT2_ERROR_NOPLUGIN code.</li>
+				<li><span class="field">access:</span> public</li>
+			</ul>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			__call
+		</span>
+					(<span class="var-type">string</span>&nbsp;<span class="var-name">$func</span>, <span class="var-type">array</span>&nbsp;<span class="var-name">$args</span>)
+			</div>
+	
+			<ul class="parameters">
+					<li>
+				<span class="var-type">string</span>
+				<span class="var-name">$func</span><span class="var-description">: The plugin name.</span>			</li>
+					<li>
+				<span class="var-type">array</span>
+				<span class="var-name">$args</span><span class="var-description">: Arguments passed to the plugin.</span>			</li>
+				</ul>
+		
+		
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 11 Sep 2005 17:45:31 -0500 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.3.0RC3</a>
+	</p>
+	</div></body>
+</html>

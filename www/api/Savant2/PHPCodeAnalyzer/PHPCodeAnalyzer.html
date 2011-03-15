@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+		<head>
+			<!-- template designed by Marco Von Ballmoos -->
+			<title>Docs For Class PHPCodeAnalyzer</title>
+			<link rel="stylesheet" href="../media/stylesheet.css" />
+			<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'/>
+		</head>
+		<body>
+			<div class="page-body">			
+<h2 class="class-name">Class PHPCodeAnalyzer</h2>
+
+<a name="sec-description"></a>
+<div class="info-box">
+	<div class="info-box-title">Description</div>
+	<div class="nav-bar">
+					<span class="disabled">Description</span> |
+													<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+						|											<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+						
+					</div>
+	<div class="info-box-body">
+        		<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Code Analysis class</p>
+<p class="description"><p>Example Usage:  <pre><ol><code><pre><li> <span class="src-var">$analyzer </span>= <span class="src-key">new </span><span class="src-id"><a href="../PHPCodeAnalyzer/PHPCodeAnalyzer.html">PHPCodeAnalyzer</a></span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li> <span class="src-var">$analyzer</span><span class="src-sym">-&gt;</span><span class="src-id"><a href="../PHPCodeAnalyzer/PHPCodeAnalyzer.html#var$source">source</a> </span>= <a href="http://www.php.net/file_get_contents">file_get_contents</a><span class="src-sym">(</span>__FILE__<span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li> <span class="src-var">$analyzer</span><span class="src-sym">-&gt;</span><a href="../PHPCodeAnalyzer/PHPCodeAnalyzer.html#methodanalyze">analyze</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+<li> <a href="http://www.php.net/print_r">print_r</a><span class="src-sym">(</span><span class="src-var">$analyzer</span><span class="src-sym">-&gt;</span><span class="src-id"><a href="../PHPCodeAnalyzer/PHPCodeAnalyzer.html#var$calledMethods">calledMethods</a></span><span class="src-sym">)</span><span class="src-sym">;</span></li>
+</pre></code></ol></pre></p></p>
+	<ul class="tags">
+				<li><span class="field">copyright:</span> Joshua Eichorn 2004</li>
+				<li><span class="field">author:</span> Joshua Eichorn &lt;<a href="mailto:josh@bluga.net">josh@bluga.net</a>&gt;</li>
+				<li><span class="field">license:</span> LGPL</li>
+				<li><span class="field">version:</span> 0.4</li>
+				<li><span class="field">todo:</span> is it important to grab the details from creating new functions defines classes?</li>
+				<li><span class="field">todo:</span> support php5 only stuff like interface</li>
+			</ul>
+		<p class="notes">
+			Located in <a class="field" href="_Savant2_PHPCodeAnalyzer_php.html">/Savant2/PHPCodeAnalyzer.php</a> (line <span class="field">59</span>)
+		</p>
+		
+				
+		<pre></pre>
+	
+			</div>
+</div>
+
+
+
+	<a name="sec-var-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variable Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+						<span class="disabled">Vars</span> (<a href="#sec-vars">details</a>)
+							| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+								</div>
+		<div class="info-box-body">
+			<div class="var-summary">
+								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$calledConstructs" title="details" class="var-name">$calledConstructs</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$calledFunctions" title="details" class="var-name">$calledFunctions</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$calledMethods" title="details" class="var-name">$calledMethods</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$calledStaticMethods" title="details" class="var-name">$calledStaticMethods</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$classesInstantiated" title="details" class="var-name">$classesInstantiated</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$createdClasses" title="details" class="var-name">$createdClasses</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$createdFunctions" title="details" class="var-name">$createdFunctions</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$filesIncluded" title="details" class="var-name">$filesIncluded</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$source" title="details" class="var-name">$source</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$usedMemberVariables" title="details" class="var-name">$usedMemberVariables</a>
+				</div>
+								<div class="var-title">
+					<span class="var-type">mixed</span>
+					<a href="#$usedVariables" title="details" class="var-name">$usedVariables</a>
+				</div>
+							</div>
+		</div>
+	</div>
+
+	<a name="sec-method-summary"></a>
+	<div class="info-box">
+		<div class="info-box-title">Method Summary</span></div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+																		<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+				 
+				|
+						<span class="disabled">Methods</span> (<a href="#sec-methods">details</a>)
+		</div>
+		<div class="info-box-body">			
+			<div class="method-summary">
+								
+				<div class="method-definition">
+											<span class="method-result">void</span>
+										<a href="#analyze" title="details" class="method-name">analyze</a>
+										()
+									</div>
+							</div>
+		</div>
+	</div>		
+
+	<a name="sec-vars"></a>
+	<div class="info-box">
+		<div class="info-box-title">Variables</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+										<a href="#sec-var-summary">Vars</a> (<span class="disabled">details</span>)
+						
+			
+										| 
+									<a href="#sec-method-summary">Methods</a> (<a href="#sec-methods">details</a>)
+							
+					</div>
+		<div class="info-box-body">
+			<a name="var$calledConstructs" id="$calledConstructs"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$calledConstructs</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">74</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Called constructs</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$calledFunctions" id="$calledFunctions"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$calledFunctions</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">69</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">functions called</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$calledMethods" id="$calledMethods"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$calledMethods</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">79</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">methods called</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$calledStaticMethods" id="$calledStaticMethods"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$calledStaticMethods</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">84</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">static methods called</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$classesInstantiated" id="$classesInstantiated"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$classesInstantiated</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">89</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">new classes instantiated</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$createdClasses" id="$createdClasses"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$createdClasses</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">104</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">classes created</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$createdFunctions" id="$createdFunctions"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$createdFunctions</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">109</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">functions created</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$filesIncluded" id="$filesIncluded"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$filesIncluded</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">114</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Files includes or requried</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$source" id="$source"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$source</span>
+			 = <span class="var-default"> &quot;&quot;</span>			(line <span class="line-number">64</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">Source code to analyze</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$usedMemberVariables" id="$usedMemberVariables"><!-- --></A>
+<div class="oddrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$usedMemberVariables</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">99</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">member variables used</p>
+	
+	
+		
+		
+
+</div>
+<a name="var$usedVariables" id="$usedVariables"><!-- --></A>
+<div class="evenrow">
+
+	<div class="var-header">
+		<span class="var-title">
+			<span class="var-type">mixed</span>
+			<span class="var-name">$usedVariables</span>
+			 = <span class="var-default">array()</span>			(line <span class="line-number">94</span>)
+		</span>
+	</div>
+
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">variables used</p>
+	
+	
+		
+		
+
+</div>
+						
+		</div>
+	</div>
+	
+	<a name="sec-methods"></a>
+	<div class="info-box">
+		<div class="info-box-title">Methods</div>
+		<div class="nav-bar">
+			<a href="#sec-description">Description</a> |
+															<a href="#sec-var-summary">Vars</a> (<a href="#sec-vars">details</a>)
+																	<a href="#sec-method-summary">Methods</a> (<span class="disabled">details</span>)
+						
+		</div>
+		<div class="info-box-body">
+			<A NAME='method_detail'></A>
+<a name="methodanalyze" id="analyze"><!-- --></a>
+<div class="oddrow">
+	
+	<div class="method-header">
+		<span class="method-title">analyze</span> (line <span class="line-number">132</span>)
+	</div> 
+	
+	<!-- ========== Info from phpDoc block ========= -->
+<p class="short-description">parse source filling informational arrays</p>
+	
+	<div class="method-signature">
+		<span class="method-result">void</span>
+		<span class="method-name">
+			analyze
+		</span>
+				()
+			</div>
+	
+		
+		
+	</div>
+						
+		</div>
+	</div>
+
+
+	<p class="notes" id="credit">
+		Documentation generated on Sun, 11 Sep 2005 17:45:30 -0500 by <a href="http://www.phpdoc.org" target="_blank">phpDocumentor 1.3.0RC3</a>
+	</p>
+	</div></body>
+</html>
